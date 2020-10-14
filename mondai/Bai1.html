@@ -1,0 +1,25 @@
+<!-- đề bài -->
+<!-- Cho 2 số a, b được lấy từ hàm prompt, hãy tính giá trị cộng, trừ, nhân, chia 
+    và chia lấy dư của 2 số và hiển thị lên trên trình duyệt -->
+
+<html>
+	<head>	
+	</head>
+	<body>
+		<script>
+            var a=prompt("Nhap a");
+            var b=prompt("Nhap b");
+            var tong=Number(a)+Number(b);
+            var hieu=a-b;
+            var nhan=a*b;
+            var chia=a/b;
+            var laydu=a%b;
+
+            document.write(a+" + "+b+" = "+tong+"<br/>");
+            document.write(a+" - "+b+" = "+hieu+"<br/>");
+            document.write(a+" * "+b+" = "+nhan+"<br/>");
+            document.write(a+" / "+b+" = "+chia+"<br/>");
+            document.write(a+" % "+b+" = "+laydu);
+        </script>
+	</body>
+</html>

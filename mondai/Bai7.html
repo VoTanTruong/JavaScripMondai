@@ -1,0 +1,30 @@
+<!-- đề bài -->
+<!-- Tương tự bài 6 nhưng áp dụng khái niệm: “n là số nguyên tố thì trong khoảng từ 2 đến căn bậc hai cua n 
+    sẽ không tồn tại số mà n chia hết”
+Với khái niệm này số lần lặp sẽ được giảm đáng kể và bài toán sẽ tối ưu hơn-->
+
+<html>
+	<head>	
+	</head>
+	<body>
+		<script>
+            var check=true;
+            function songuyento(a) {
+                if (a>1) {
+                    for (var i = 2; i<=Math.sqrt(a); i++) {
+                        if (a%i==0) {
+                            check=false;
+                            break;
+                        }  
+                    }
+                }else check=false;
+                if (check) {
+                    document.write(a+" la so nguyen to<br/>");
+                }else document.write(a+" khong la so nguyen to<br/>");
+            }
+
+            songuyento(1123);
+            songuyento(2345);
+		</script>
+	</body>
+</html>

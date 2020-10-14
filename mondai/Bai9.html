@@ -1,0 +1,34 @@
+<!-- đề bài -->
+<!-- Dùng vòng lặp While, viết hàm tính tổng các số chia hết cho 3 trong khoảng từ 0 đến n
+Test thử với n = 300, 500, 1000
+ -->
+
+<html>
+	<head>	
+	</head>
+	<body>
+        <p>Nhap vao mot so, tinh tong cac so chia het cho 3 trong khoang 0 den n</p>
+        <span>Enter a Number: </span>
+        <input id="number">
+        <button   button type="button" onclick="tinh_tong()">Print Result</button>
+        <p id="result"></p>
+
+
+		<script>
+            function tinh_tong() {
+                var n=document.getElementById("number").value;
+                var tong=0;
+                var text="0 ";
+                var i=1;
+                while (i<=n) {
+                    if (i%3==0) {
+                    text=text+" + "+i;
+                    tong+=i;
+                    }
+                    i++;
+                }
+                document.getElementById("result").innerHTML=text+" = "+tong;
+            }
+		</script>
+	</body>
+</html>
