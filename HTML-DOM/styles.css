@@ -1,0 +1,39 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.list-img {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: auto;
+  padding-top: 50px;
+  margin: 5px;
+  text-align: center;
+  width: 75%;
+}
+.list-img-box {
+  padding: 0px;
+  margin: 5px;
+  height: 150px;
+  width: 100%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.content-img {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}

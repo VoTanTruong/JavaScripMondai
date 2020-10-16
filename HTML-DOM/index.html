@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="list-img">
+            <div class="list-img-box" >
+                <img class="img" id="1" src="img/img1.jpg" onclick="changeImg(this.src)"/>
+            </div>
+            <div class="list-img-box">
+                <img class="img" id="2" src="img/img2.jpg" onclick="changeImg(this.src)"/>
+            </div>
+            <div class="list-img-box">
+                <img class="img" id="3" src="img/img3.jpg" onclick="changeImg(this.src)"/>
+            </div>
+            <div class="list-img-box">
+                <img class="img" id="4" src="img/img4.jpg" onclick="changeImg(this.src)"/>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-img">
+                <img class="img" id="cont-img" src="img/img1.jpg" />
+            </div>
+        </div>
+    </div>
+    <script>
+
+        function changeImg(imgLink) {
+            document.getElementById("cont-img").src=(imgLink);
+        }
+    </script>
+</body>
+</html>
