@@ -10,16 +10,16 @@
     <div class="container">
         <div class="list-img">
             <div class="list-img-box" >
-                <img class="img" id="1" src="img/img1.jpg" onclick="changeImg(this.src)"/>
+                <img class="img" id="1" src="img/img1.jpg" onclick="changeImg(this)" onmouseover="mOver(this)"/>
             </div>
             <div class="list-img-box">
-                <img class="img" id="2" src="img/img2.jpg" onclick="changeImg(this.src)"/>
+                <img class="img" id="2" src="img/img2.jpg" onclick="changeImg(this)" onmouseover="mOver(this)"/>
             </div>
             <div class="list-img-box">
-                <img class="img" id="3" src="img/img3.jpg" onclick="changeImg(this.src)"/>
+                <img class="img" id="3" src="img/img3.jpg" onclick="changeImg(this)" onmouseover="mOver(this)"/>
             </div>
             <div class="list-img-box">
-                <img class="img" id="4" src="img/img4.jpg" onclick="changeImg(this.src)"/>
+                <img class="img" id="4" src="img/img4.jpg" onclick="changeImg(this)" onmouseover="mOver(this)"/>
             </div>
         </div>
         <div class="content">
@@ -30,9 +30,13 @@
     </div>
     <script>
 
-        function changeImg(imgLink) {
-            document.getElementById("cont-img").src=(imgLink);
+        function changeImg(obj) {
+            document.getElementById("cont-img").src=(obj.src);
         }
+        function mOver(abc) {
+            abc.style.cursor=("pointer");
+        }
+        
     </script>
 </body>
 </html>
